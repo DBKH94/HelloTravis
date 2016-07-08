@@ -4,4 +4,6 @@ compiler:
 - gcc
 - clang
 
-script: ./test.sh
+script:
+- make
+- ./test.sh
