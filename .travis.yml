@@ -3,5 +3,3 @@ language: c
 compiler:
 	- gcc
 	- clang
-
-script: ./hello_travis
