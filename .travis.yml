@@ -8,4 +8,4 @@ script:
 - cd HelloTravisJava
 - mkdir bin
 - javac -d bin -sourcepath src src/HelloTravis.java
-- javaw -Dfile.encoding=Cp1252 -classpath bin HelloTravis
+- java -Dfile.encoding=Cp1252 -classpath bin HelloTravis
