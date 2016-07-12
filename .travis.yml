@@ -5,4 +5,4 @@ compiler:
 - clang
 
 script:
-- javaw -Dfile.encoding=Cp1252 -classpath HelloTravisJava/bin HelloTravis
+- cd HelloTravisJava && mkdir bin && javac -d bin -sourcepath src src/HelloTravis.java && javaw -Dfile.encoding=Cp1252 -classpath bin HelloTravis
