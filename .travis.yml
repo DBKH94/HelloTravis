@@ -5,5 +5,4 @@ compiler:
 - clang
 
 script:
-- cd c/ && make && ./test.sh
-- cd .. && javaw -Dfile.encoding=Cp1252 -classpath HelloTravisJava/bin HelloTravis
+- javaw -Dfile.encoding=Cp1252 -classpath HelloTravisJava/bin HelloTravis
