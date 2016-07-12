@@ -6,4 +6,4 @@ compiler:
 
 script:
 - cd c/ && make && ./test.sh
-- cd ../HelloTravisJava/ && java -Dfile.encoding=Cp1252 -classpath bin HelloTravis
+- cd .. && ls && java -Dfile.encoding=Cp1252 -classpath HelloTravisJava/bin HelloTravis
