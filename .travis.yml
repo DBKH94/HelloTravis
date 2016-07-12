@@ -1,11 +1,7 @@
 language: java
 
-compiler:
-- gcc
-- clang
-
 script:
-- cd HelloTravisJava
-- mkdir bin
-- javac -d bin -sourcepath src src/HelloTravis.java
+- cd HelloTravisJava && mkdir bin
+- javac -d bin -sourcepath src src/*.java
 - java -Dfile.encoding=Cp1252 -classpath bin HelloTravis
+- cd ../c/ && make && ./test.sh
